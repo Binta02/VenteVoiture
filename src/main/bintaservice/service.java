@@ -1,5 +1,5 @@
-package moi;
-
+package bintaservice;
+import moi.Voiture;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,7 +25,13 @@ public class service implements Statistique {
         for (Voiture voiture : listeVoiture) {
             sommePrix += voiture.getPrix();
         }
-        return sommePrix;
+
+        int nombreVoitures = listeVoiture.size();
+        int nombreRemises = nombreVoitures / 5;
+        double remise = Math.min(nombreRemises * 0.05 * sommePrix, 20000.0);
+        int prixFinal = (int) (sommePrix - remise);
+
+        return prixFinal;
     }
 
     public List<Voiture> getListeVoiture() {
