@@ -49,7 +49,6 @@ public class serviceTest {
         service.ajouter(v4);
         service.ajouter(v5); // 5 voitures -> 5% de remise
         assertEquals(34000 - (0.05 * 34000), service.prix());
-
         service.ajouter(v6); // 6 voitures -> toujours 5% de remise
         assertEquals(40000 - (0.05 * 40000), service.prix());
     }

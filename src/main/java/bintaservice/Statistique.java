@@ -1,5 +1,4 @@
 package bintaservice;
-
 import moi.Voiture;
 
 public interface Statistique {
