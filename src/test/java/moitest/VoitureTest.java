@@ -1,7 +1,9 @@
 package moitest;
-import java.moi.Voiture;
+import moi.Voiture;
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
 
 public class VoitureTest {
     @Test
