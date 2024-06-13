@@ -65,5 +65,6 @@ public class serviceTest {
     @Test
     void testPrixSansVoiture() {
         assertThrows(ArithmeticException.class, () -> service.prix());
+        // brefffff
     }
 }
