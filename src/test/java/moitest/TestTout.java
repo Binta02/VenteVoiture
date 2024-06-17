@@ -93,6 +93,7 @@ public class TestTout {
         assertEquals(s, service.toString());
     }
 
+
     @Test
     void testGetMarqueVoiture() {
         assertEquals("Porsche", voitureTest.getMarque());
