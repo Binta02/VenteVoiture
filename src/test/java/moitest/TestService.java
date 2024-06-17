@@ -1,13 +1,14 @@
 package moitest;
-
-import moi.Voiture;
 import bintaservice.service;
+import moi.Voiture;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-public class serviceTest {
+public class TestService {
+
     private service service;
     private Voiture v1;
     private Voiture v2;
@@ -65,6 +66,7 @@ public class serviceTest {
     @Test
     void testPrixSansVoiture() {
         assertThrows(ArithmeticException.class, () -> service.prix());
-        // brefffff
     }
+
+
 }

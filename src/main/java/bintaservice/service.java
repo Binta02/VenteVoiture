@@ -1,10 +1,9 @@
 package bintaservice;
 import moi.Voiture;
 import java.util.ArrayList;
-import java.util.List;
 
 public class service implements Statistique {
-    private List<Voiture> listeVoiture;
+    private ArrayList<Voiture> listeVoiture;
 
     public service() {
         this.listeVoiture = new ArrayList<>();
@@ -34,11 +33,11 @@ public class service implements Statistique {
         return prixFinal;
     }
 
-    public List<Voiture> getListeVoiture() {
+    public ArrayList<Voiture> getListeVoiture() {
         return listeVoiture;
     }
 
-    public void setListeVoiture(List<Voiture> listeVoiture) {
+    public void setListeVoiture(ArrayList<Voiture> listeVoiture) {
         this.listeVoiture = listeVoiture;
     }
 
