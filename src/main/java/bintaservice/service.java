@@ -22,6 +22,9 @@ public class service implements Statistique {
 
         int sommePrix = 0;
         for (Voiture voiture : listeVoiture) {
+            if(voiture.getPrix()<0){
+                throw new ArithmeticException("prix negatif");
+            }
             sommePrix += voiture.getPrix();
         }
 
